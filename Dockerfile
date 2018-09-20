@@ -1,13 +1,13 @@
-FROM alpine:3.7
+FROM alpine:3.8
 MAINTAINER Albert Chan <atfchan@gmail.com>
 
-ARG VERSION=3.11.2
+ARG VERSION=3.11.3
 
 # Important!  Update this no-op ENV variable when this Dockerfile
 # is updated with the current date. It will force refresh of all
 # of the base images and things like `apt-get update` won't be using
 # old cached versions when the Dockerfile is built.
-ENV REFRESHED_AT=2018-05-28 \
+ENV REFRESHED_AT=2018-09-20 \
     LANG=en_US.UTF-8 \
     TERM=xterm \
     HOME=/
